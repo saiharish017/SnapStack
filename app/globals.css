@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #010102;
+  --color-surface-1: #0f1011;
+  --color-surface-2: #141516;
+  --color-surface-3: #18191a;
+  --color-surface-4: #191a1b;
+
+  --color-hairline: #23252a;
+  --color-hairline-strong: #34343a;
+  --color-hairline-subtle: #1b1c1e;
+
+  --color-ink: #f7f8f8;
+  --color-ink-muted: #d0d6e0;
+  --color-ink-subtle: #8a8f98;
+  --color-ink-tertiary: #62666d;
+
+  --color-brand-lavender: #5e6ad2;
+  --color-brand-hover: #828fff;
+  --color-brand-focus: #5e69d1;
+
+  --color-status-emerald: #10b981;
+  --color-status-blue: #3b82f6;
+  --color-status-purple: #a855f7;
+  --color-status-amber: #f59e0b;
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+:root {
+  --background: #010102;
+  --foreground: #f7f8f8;
+  --card: #0f1011;
+  --card-foreground: #f7f8f8;
+  --popover: #18191a;
+  --popover-foreground: #f7f8f8;
+  --primary: #5e6ad2;
+  --primary-foreground: #ffffff;
+  --secondary: #141516;
+  --secondary-foreground: #f7f8f8;
+  --muted: #141516;
+  --muted-foreground: #8a8f98;
+  --accent: #18191a;
+  --accent-foreground: #f7f8f8;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #23252a;
+  --input: #23252a;
+  --ring: #5e6ad2;
+  --radius: 0.75rem;
+
+  /* Stitch Obsidian Precision tokens */
+  --canvas: #010102;
+  --surface-1: #0f1011;
+  --surface-2: #141516;
+  --surface-3: #18191a;
+  --surface-4: #191a1b;
+
+  --hairline: #23252a;
+  --hairline-strong: #34343a;
+  --hairline-subtle: #1b1c1e;
+
+  --ink: #f7f8f8;
+  --ink-muted: #d0d6e0;
+  --ink-subtle: #8a8f98;
+  --ink-tertiary: #62666d;
+
+  --brand-primary: #5e6ad2;
+  --brand-hover: #828fff;
+  --brand-focus: #5e69d1;
+
+  --tag-verified: #10b981;
+  --tag-nocode: #3b82f6;
+  --tag-developer: #a855f7;
+  --tag-review: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling for horizontal filter rows */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
